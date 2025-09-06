@@ -1,0 +1,106 @@
+/* Reset default dari browser */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body dengan background gambar */
+body {
+    font-family: Arial, sans-serif;
+    /* Mengganti background dengan gradien segar */
+    background: linear-gradient(to right, #99ffcc, #ff9933); /* gradasi hijau Mint ke Oranye */
+    background-image: url('background.jpg'); 
+    background-size: cover;
+    background-attachment: fixed;
+    color: #003366; /* Biru Tua untuk teks utama */
+    padding: 20px;
+}
+
+/* Container Flexbox */
+.container {
+    display: flex;
+    background: rgba(255, 255, 255, 0.95); /* untuk kontras */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+    flex: 1;
+    padding: 15px;
+    background: #99ffcc; /* Hijau Mint untuk sidebar */
+    border-radius: 8px;
+}
+.sidebar h3 {
+    margin-bottom: 20px;
+    color: #003366; /* Biru Tua untuk judul sidebar */
+}
+/* Gaya untuk link media sosial */
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.social-links a {
+    display: block;
+    text-decoration: none;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 51, 102, 0.5);
+}
+
+
+/* Konten Utama */
+.konten {
+    flex: 2;
+    padding: 15px;
+    background: #ffffff; /* Putih bersih untuk konten utama */
+    border-radius: 8px;
+}
+.konten h2 {
+    margin-bottom: 15px;
+    color: #003366; /* Biru Tua untuk judul konten */
+}
+.konten p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    color: #003366; /* Biru Tua untuk teks paragraf */
+}
+/* Bagian Biografi di Judul Artikel */
+.bio-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 15px 0;
+    padding: 10px;
+    background: #99ffcc; /* Hijau Mint untuk bagian biografi */
+    border-radius: 8px;
+}
+
+.bio-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ff9933; /* Oranye untuk border gambar */
+}
+
+.bio-section p {
+    font-size: 14px;
+    color: #003366; /* Biru Tua untuk teks biografi */
+    line-height: 1.5;
+}
