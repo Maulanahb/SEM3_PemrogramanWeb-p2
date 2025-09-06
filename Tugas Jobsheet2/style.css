@@ -1,4 +1,4 @@
-/* Reset default dari browser */
+/* Reset default settingan browser */
 * {
     margin: 0;
     padding: 0;
@@ -8,9 +8,8 @@
 /* Body dengan background gambar */
 body {
     font-family: Arial, sans-serif;
-    /* Mengganti background dengan gradien segar */
-    background: linear-gradient(to right, #99ffcc, #ff9933); /* gradasi hijau Mint ke Oranye */
-    background-image: url('background.jpg'); 
+    background: linear-gradient(to top right, #99ffcc, #66ccff);
+    background-image: url('background.jpg');
     background-size: cover;
     background-attachment: fixed;
     color: #003366; /* Biru Tua untuk teks utama */
@@ -20,7 +19,7 @@ body {
 /* Container Flexbox */
 .container {
     display: flex;
-    background: rgba(255, 255, 255, 0.95); /* untuk kontras */
+    background: rgba(255, 255, 255, 0.95);
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
     padding: 20px;
@@ -31,38 +30,24 @@ body {
 .sidebar {
     flex: 1;
     padding: 15px;
-    background: #99ffcc; /* Hijau Mint untuk sidebar */
+    background: linear-gradient(to top right, #99ffcc, #66ccff); /* Gradien biru untuk sidebar */
     border-radius: 8px;
 }
 .sidebar h3 {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: #003366; /* Biru Tua untuk judul sidebar */
 }
-/* Gaya untuk link media sosial */
-.social-links {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    align-items: center;
+.sidebar ul {
+    list-style: none;
 }
-
-.social-links a {
-    display: block;
+.sidebar ul li a {
+    color: #ff9933; /* Oranye sebagai warna link */
     text-decoration: none;
+    font-weight: bold; /* Menambahkan bold untuk menonjolkan link */
 }
-
-.social-icon {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    transition: transform 0.3s ease-in-out;
+.sidebar ul li a:hover {
+    color: #003366; /* Biru Tua saat hover */
 }
-
-.social-icon:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 10px rgba(0, 51, 102, 0.5);
-}
-
 
 /* Konten Utama */
 .konten {
